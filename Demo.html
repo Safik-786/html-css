@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        span{
+            display: inline-block;
+            border: 2px solid salmon;
+            padding: 5px 5px;
+        }
+       
+        li{
+            display: inline;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul >
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Notification</li>
+            <li>Help</li>
+        </ul>
+    </nav>
+
+    <span>safik mahammad@gmail.com Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde eaque dolorem ex, distinctio sit laudantium hic deserunt facilis veritatis alias eius et molestiae saepe vitae, pariatur earum minus reprehenderit!Lorem amet consectetur adipisicing elit. Necessitatibus voluptas quae odio dignissimos! Est quo autem commodi. Aut eaque illum facilis illo animi. Dolorum ab numquam dignissimos non similique ut.</span>
+    
+    <script  type="text/javascript">
+        function secondFunction(a,b)
+        {
+            var result;
+            result=hypotenus(a,b);
+
+            document.write(result);
+        }
+        function hypotenus(x,y)
+        {
+            function square(m)
+            {
+                return m*m;
+            }
+            return Math.sqrt(square(x)+square(y));
+        }
+    </script>
+    <form >
+        <input type="button" onclick="secondFunction(3,4)" value="Call Function">
+
+    </form>
+</body>
+</html>

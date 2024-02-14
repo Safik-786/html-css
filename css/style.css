@@ -1,0 +1,214 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS VARIABLE */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar ---------------------------------------------------------------------------------------*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;  
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* navigation bar :list styling */
+
+#navbar ul {
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbar ul li a{
+    display: block;       
+    /* this is important point . by doing this each anchor tah are independent of another */
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* border radius is important and responsible for curve hover */
+    text-decoration: none;
+    color: black;
+}
+/* hover */
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+#logo{
+    margin:10px 25px;
+}
+#logo img{
+    height: 45px;
+    width: 45px;
+    margin: 0px 8px;
+}
+
+/* HOME SECTION ------------------------------------------------------------------------------------------ */
+#home{
+
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+}
+#home::before{
+    content: "";
+    background:url('../img/bg2.jpg') no-repeat  center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.95;
+}
+#home p{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+#home h1{
+    color:aqua;
+    text-shadow: 2px 2px deeppink;
+    font-size: 2.5rem;
+}
+#home h1:hover{
+    color:deeppink;
+    text-shadow: 2px 2px aqua;
+    transition: all 2s ;
+}
+/* services section --------------------------------------------------------------------------------------------*/
+.services{
+    margin: 34px;
+    display: flex;
+}
+.services .box{
+    border: 2px solid deeppink;
+    padding: 5px 5px;
+    margin: 0 7px;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, 0.2);
+    
+}
+.services .box img{
+    height: 120px;
+    width: 130px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+
+}
+#back::before{
+    content: "";
+    background:url('../img/bg2.jpg') no-repeat  center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.95;
+}
+/* clientsection---------------------------------------------------------------------------------------------- */
+.client-section{
+    
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 8px 0px;
+}
+.client img{
+    height: 110px;
+    padding:0 34px;
+}
+/* .client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
+
+/* contact section--------------------------------------------------------------------------------------------- */
+
+#contact{
+    position :relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('');
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 1.8rem;
+    align-items: center;
+    padding: 7px;
+    color:aqua;
+    text-shadow: 2px 2px deeppink;
+    
+    border: 2px solid deeppink;   
+}
+.h-primary:hover{
+    transition: all 2s;
+    color: deeppink;
+    text-shadow:3px 3px cyan ;
+}
+.h-secondary{
+    
+    padding: 12px;
+    font-family:'Courier New', Courier, monospace;
+    color: deeppink;
+    text-shadow: 2px 2px aqua;
+
+}
+.btn{
+    border: 1px solid deeppink;
+    padding: 4px 5px;
+    background-color: cyan;
+    border-radius: 10px;
+    color: deeppink;
+    margin: 15px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 2px 2px rgb(61, 56, 56);
+
+}
+.btn:hover{
+    color: cyan;
+    background-color: deeppink;
+    transition: all 2s ease-out;
+}
+.center{
+    text-align: center;
+}

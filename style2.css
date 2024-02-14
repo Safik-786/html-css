@@ -1,0 +1,19 @@
+h2{
+    width: 600px;
+    padding: 33px 33px;
+    border:2px solid black;
+    margin-top: 200px;
+    margin-left: 350px;
+    box-sizing: border-box;
+
+}
+ul{
+    background-color: cyan;
+    list-style-type: none;
+    border: 1px solid black;
+    overflow: auto;
+}
+li{
+    padding: 5px 10px;
+    float: left;
+}

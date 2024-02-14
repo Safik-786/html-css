@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,violet,indigo,blue,green ,yellow,orange , red);
+        }
+        .container{
+            background-image: linear-gradient(rgb(239, 170, 43) , white ,rgb(44, 232, 44));
+            border: 2px solid black;
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            background-image: linear-gradient(cyan , rgb(240, 144, 160));
+        }
+        #box2{
+            background-image: linear-gradient(to right,cyan , rgb(239, 140, 157));
+        }
+        #box3{
+            background-image: linear-gradient(to left ,cyan , rgb(245, 135, 153));
+        }
+        #box4{
+            background-image: repeating-linear-gradient(to bottom right ,cyan 40%, rgb(203, 125, 138) 60%);
+        }
+        #box5{
+            background-image: linear-gradient(to bottom left ,cyan , rgb(248, 139, 157));
+        }
+        #box6{
+            /* background-image: linear-gradient(0deg ,black, white); */
+            /* background-image: linear-gradient(90deg ,black, white); */
+            /* background-image: linear-gradient(180deg ,black, white); */
+            background-image: linear-gradient(45deg ,black, white);
+            /* background-image: linear-gradient(60deg ,black, white); */
+        }
+        #box7{
+            background-image: linear-gradient(to top left ,cyan , rgb(232, 138, 154));
+        }
+        #box8{
+            background-image: radial-gradient(circle ,red , green);
+        }
+        #box9{
+            background-image: repeating-radial-gradient(circle ,pink 60% , rgb(73, 236, 73));
+        }
+        #box10{
+            background-image: conic-gradient(pink 60% , rgb(73, 236, 73));
+        }
+        #box11{
+            background-image: conic-gradient(red , green , blue, pink, green);
+        }
+        #box12{
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(red 1deg 10deg, green 1deg 10deg , blue 10deg 20deg, pink 20deg 30deg, green 30deg 40deg);
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+        <div class="box" id="box9">9</div>
+        <div class="box" id="box10">10</div>
+        <div class="box" id="box11">11</div>
+        <div class="box" id="box12">12</div>
+    </div>
+</body>
+</html>
