@@ -15,6 +15,18 @@
             display: inline;
             padding: 20px;
         }
+        .grand-parent{
+            position: relative;
+        }
+        .parent{
+            /* position: relative; */
+            
+        }
+        .child{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
     </style>
 </head>
 <body>
@@ -51,5 +63,22 @@
         <input type="button" onclick="secondFunction(3,4)" value="Call Function">
 
     </form>
+
+    <hr>
+    <div class="grand-parent" style="border: 1px solid red; height: 400px;">
+        <div class="parent" style="border: 1px solid cyan; height: 200px; margin: 100px;">
+            <div class="child" style="border: 1px solid green; height: 100px; width: 100px; ">
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>Lorem    ipsum dolor sit amet consectetur adipisicing elit. Velit unde exercitationem atque a ducimus distinctio, accusamus voluptas provident sit quaerat?</p>
+    <pre>Lorem  ipsum dolor sit amet consectetur adipisicing elit. Velit unde exercitationem atque a ducimus distinctio, accusamus voluptas provident sit quaerat?</pre>
+
+    <script>
+        console.log(false  && false)
+        console.log(10>11  && 20>21)
+    </script>
 </body>
 </html>

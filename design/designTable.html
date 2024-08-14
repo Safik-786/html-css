@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container for the table */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+
+        /* Style for the table */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Style for table headers */
+        th {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Style for table rows */
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Stripe effect for table rows */
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect for table rows */
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            th,
+            td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>28</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>34</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Sam Brown</td>
+                    <td>sam.brown@example.com</td>
+                    <td>23</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>28</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>34</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Sam Brown</td>
+                    <td>sam.brown@example.com</td>
+                    <td>23</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>28</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>34</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Sam Brown</td>
+                    <td>sam.brown@example.com</td>
+                    <td>23</td>
+                    <td>UK</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

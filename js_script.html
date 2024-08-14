@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="item">Safik</div>
+    <button onclick="btnClick()">Click</button>
+    <script>
+        item=  document.querySelector('.item')
+        btnClick =()=>{
+            console.log('Clicked')
+            // item.innerHtml= "Rahul";
+            console.log(item.__proto__)
+            item.innerHTML= "Rahul"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .code-box {
+        position: relative;
+        background-color: #282c34;
+        border-radius: 8px;
+        padding: 16px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #ffffff;
+        font-size: 14px;
+        overflow: auto;
+        margin: 20px 0;
+    }
+
+    .copy-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #61dafb;
+        color: #000;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .copy-btn:hover {
+        background-color: #21a1f1;
+    }
+
+    pre {
+        margin: 0;
+        white-space: pre-wrap; /* Wraps long lines */
+    }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="code-box">
+        <button class="copy-btn" onclick="copyCode()">Copy</button>
+        <pre><code id="code-content">
+    const greeting = "Hello, World!";
+    console.log(greeting);
+        </code></pre>
+    </div>
+
+
+    <script>
+    function copyCode() {
+        const codeContent = document.getElementById("code-content").innerText;
+        navigator.clipboard.writeText(codeContent).then(() => {
+            alert("Code copied to clipboard!");
+        }).catch(() => {
+            alert("Failed to copy code.");
+        });
+    }
+
+    </script>
+    
+</body>
+</html>

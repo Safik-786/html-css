@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     position: relative;  
-    
 }
 #navbar::before{
     content: "";
@@ -23,7 +22,7 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 1;
 }
 /* navigation bar :list styling */
 
@@ -71,7 +70,7 @@
 }
 #home::before{
     content: "";
-    background:url('../img/bg2.jpg') no-repeat  center center/cover;
+    background:url('../img/bg2.jpg') repeat-y  center center/cover;
     position: absolute;
     height: 100%;
     width: 100%;

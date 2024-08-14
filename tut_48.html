@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 2px solid black;
+            width: 200px;
+            aspect-ratio: 1/2;
+        }
+        .parent{
+            border: 2px solid black;
+            width: 300px;
+            padding-bottom: 0px;
+        }.imgg{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 500px) {
+            .parent{
+                width: 100%;
+            }
+        }
+        .parent2{
+            width: 400px;
+            height: 500px;
+            padding-bottom: 0px;
+            aspect-ratio: 1/1;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: space-between;">
+    <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit alias eaque doloremque a distinctio error, numquam excepturi facilis laborum quo? Eligendi tempore cumque repellendus laborum! Recusandae laborum cumque nobis officiis error, beatae quia voluptate placeat eos quam adipisci fugit repellendus nemo dolorum ipsam dolorem accusamus rem vero, itaque, excepturi iusto eveniet iure. Eius perferendis earum mollitia modi esse eligendi odio ad rem error consequuntur assumenda, dicta reprehenderit quae fuga.
+    </div>
+    <div class="parent">
+        <img class="imgg" src="./img/Fruit.jpg" width="1000px" alt="">
+    </div>
+    <div class="parent2">
+        <video   autoplay loop muted src="./img/VID-20230105-WA0005.mp4"></video>
+    </div>
+</body>
+</html>

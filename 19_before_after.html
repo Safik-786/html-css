@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url(img/abc.jpg) no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 10px 20px;
+        }
+
+        header {
+            /* display: flex; */
+            /* flex-direction: ; */
+        }
+        section{
+            height: 344px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+           
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "this is content";
+        }
+        section::after{
+            content: "this is content";
+        } */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel
+            , quia maxime est quaerat sequi, deleniti veritatis blanditiis quis quod, 
+            dolor sint tempore deserunt veniam perspiciatis. Molestiae neque ut doloribu
+            s soluta aut et dicta consequuntur commodi illo maiores? Deserunt molestias, v
+            el cum animi iste velit in quibusdam nihil facere, labore minus sit quidem totam ex
+            pedita! Doloribus eos, beatae odit obcaecati illo corrupti repellat deserunt maxime s
+            int veniam reprehenderit ipsum et. Dolorum eos sunt, ad, nulla provident dist
+            inctio blanditiis consequatur labore impedit earum iste ab obcaecati quaerat liq
+            uid magnam magni laboriosam velit autem mollitia aperiam dicta veritatis harum arch
+            itecto eveniet! Molestiae?
+        </p>
+    </section>
+    <hr>
+</body>
+
+</html>
